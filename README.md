@@ -28,4 +28,5 @@ See the FrontController class code to get all the features.
 ###BackController
 
 Finally, this is the private controller, reserved to users who are granted Administrator role.
-As its name suggests, it is meant to the backend management. This controller allows administrator users to create, read, update or delete (**CRUD**) a product from the database, and also to access every order's details on the database.
+As its name suggests, it is meant to the backend management.
+This controller allows administrator users to create, read, update or delete (**CRUD**) a product from the database, and also to access every order's details on the database.

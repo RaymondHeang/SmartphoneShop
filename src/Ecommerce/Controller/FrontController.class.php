@@ -6,10 +6,10 @@
 	use Ecommerce\Model\Order;
 	use Ecommerce\Model\Product;
 	use Ecommerce\Model\CartProduct;
-	use Ecommerce\Model\dao\UserManager;
-	use Ecommerce\Model\dao\OrderManager;
-	use Ecommerce\Model\dao\ProductManager;
-	use Ecommerce\Model\dao\CartProductManager;
+	use Ecommerce\Model\DAO\UserManager;
+	use Ecommerce\Model\DAO\OrderManager;
+	use Ecommerce\Model\DAO\ProductManager;
+	use Ecommerce\Model\DAO\CartProductManager;
 
 	class FrontController
 	{
