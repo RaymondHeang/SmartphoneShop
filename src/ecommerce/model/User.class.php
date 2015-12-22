@@ -1,10 +1,12 @@
 <?php
-	namespace ecommerce\model;
+	namespace Ecommerce\Model;
 
-	class User{
+	class User
+    {
 		protected $password, $mail, $lastname, $firstname, $address, $cp, $city, $phone, $role, $id;
 
-		public function __construct($id, $mail, $password, $crypt=false, $firstname, $lastname, $address, $cp, $city, $phone, $role=null){
+		public function __construct($id, $mail, $password, $crypt=false, $firstname, $lastname, $address, $cp, $city, $phone, $role=null)
+        {
 			$this->setMail($mail);
 			$this->setPassword($password, $crypt);
 			$this->setFirstname($firstname);
@@ -17,87 +19,107 @@
 			$this->setId($id);
 		}
 
-		public function getPassword(){
+		public function getPassword()
+        {
 			return $this->password;
 		}
 
-		public function setPassword($password, $crypt){
-			if($crypt){
+		public function setPassword($password, $crypt)
+        {
+			if ($crypt) {
 				$this->password = password_hash($password, PASSWORD_DEFAULT);
-			}else{
+			} else {
 				$this->password = $password;
 			}
 		}
 
-		public function getMail(){
+		public function getMail()
+        {
 			return $this->mail;
 		}
 
-		public function setMail($mail){
+		public function setMail($mail)
+        {
 			$this->mail = $mail;
 		}
 
-		public function getFirstname(){
+		public function getFirstname()
+        {
 			return $this->firstname;
 		}
 
-		public function setFirstname($firstname){
+		public function setFirstname($firstname)
+        {
 			$this->firstname = $firstname;
 		}
 
-		public function getLastname(){
+		public function getLastname()
+        {
 			return $this->lastname;
 		}
 
-		public function setLastname($lastname){
+		public function setLastname($lastname)
+        {
 			$this->lastname = $lastname;
 		}
 
-		public function getAddress(){
+		public function getAddress()
+        {
 			return $this->address;
 		}
 
-		public function setAddress($address){
+		public function setAddress($address)
+        {
 			$this->address = $address;
 		}
 
-		public function getCp(){
+		public function getCp()
+        {
 			return $this->cp;
 		}
 
-		public function setCp($cp){
+		public function setCp($cp)
+        {
 			$this->cp = $cp;
 		}
 
-		public function getCity(){
+		public function getCity()
+        {
 			return $this->city;
 		}
 
-		public function setCity($city){
+		public function setCity($city)
+        {
 			$this->city = $city;
 		}
 
-		public function getPhone(){
+		public function getPhone()
+        {
 			return $this->phone;
 		}
 
-		public function setPhone($phone){
+		public function setPhone($phone)
+        {
 			$this->phone = $phone;
 		}
 
-		public function getRole(){
+		public function getRole()
+        {
 			return $this->role;
 		}
 
-		public function setRole($role){
+		public function setRole($role)
+        {
 			$this->role = $role;
 		}
 
-		public function getId(){
+		public function getId()
+        {
 			return $this->id;
 		}
 
-		public function setId($id){
+		public function setId($id)
+        {
 			$this->id = $id;
 		}
 	}

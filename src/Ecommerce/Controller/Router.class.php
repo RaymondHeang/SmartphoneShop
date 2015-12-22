@@ -1,7 +1,7 @@
 <?php
-    namespace ecommerce\controller;
+    namespace Ecommerce\Controller;
 
-    class Controller
+    class Router
     {
 
         public function __construct()
@@ -35,13 +35,14 @@
                 } else {
                     $this->errorAction(); //else call errorAction()
                 }
-            }else{
+            } else {
                 $this->errorAction(); //else call errorAction()
             }
             require ROOT . 'inc/site.footer.inc.php'; //include HTML footer
         }
 
-        protected function errorAction() { //error method
+        protected function errorAction() //error method
+        {
             require ROOT . 'src/ecommerce/view/error.php'; //include the error page
         }
 

@@ -1,6 +1,6 @@
 <?php
 
-    namespace ecommerce\model\dao;
+    namespace Ecommerce\Model\Dao;
 
     /**
      * Class DBOperation.

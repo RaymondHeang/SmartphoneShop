@@ -1,7 +1,7 @@
-<?php    
-    use ecommerce\controller\Controller;
-    
+<?php
+    use Ecommerce\Controller\Router;
+
     require 'inc/conf.inc.php';
-	session_start(); 
-    
-    new Controller();
+	session_start();
+
+    new Router();
