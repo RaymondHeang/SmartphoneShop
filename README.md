@@ -8,16 +8,16 @@ This project is a Smartphones e-commerce website using the **MVC** pattern.
 
 ##Controllers
 
-SmartphoneShop uses 3 different controllers :  [Controller](#controller), [FrontController](#frontcontroller) & [BackController](#backcontroller).
+SmartphoneShop uses 3 different controllers :  [Router](#router), [FrontController](#frontcontroller) & [BackController](#backcontroller).
 
-###Controller
+###Router
 
-This is the main controller. 
+This is the main controller.
 Its purpose is to redirect the user to the right controller (Front or Back) and to the right method, depending on the URL's arguments.
 > **For example :** index.php?**controller=Front**&**method=signin** will redirect the user to the *signinAction* method from the *FrontController*.
 
-In case of a nonexistent controller's name and/or method's name given, Controller will show a 404 error page.
-By default, if no argument is given, Controller will redirect the user to the FrontController's homeAction method.
+In case of a nonexistent controller's name and/or method's name given, Router will show a 404 error page.
+By default, if no argument is given, Router will redirect the user to the FrontController's homeAction method.
 
 ###FrontController
 
